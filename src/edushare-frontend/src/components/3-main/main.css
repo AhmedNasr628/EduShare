@@ -1,0 +1,145 @@
+/* =========================
+ table of contents
+============================
+ 
+1. left-section
+2. right-section == cards
+3. responsive design (media query)
+
+*/
+
+main.flex {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* =============================
+   1. left-section
+=============================== */
+
+main section.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main section.left-section button {
+  background: rgba(36, 37, 46, 1);
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.05rem;
+  opacity: 0.5;
+  text-transform: capitalize;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+main section.left-section button:hover {
+  opacity: 1;
+}
+
+main section.left-section button.active {
+  opacity: 1;
+  background: rgba(36, 37, 46, 1);
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.8rem 0;
+  border: 1px solid var(--blue);
+}
+
+/* =============================
+   2. right-section == cards
+=============================== */
+
+main section.right-section {
+  /* flex-grow: 1; */
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+main section.right-section .card {
+  background: rgba(36, 37, 46, 1);
+  padding: 0.25rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+main section.right-section .card:hover {
+  border: 1px solid var(--blue);
+  rotate: 1deg;
+  scale: 1.01;
+  cursor: pointer;
+}
+
+main section.right-section .card img {
+  border-radius: 10px;
+}
+main section.right-section .card .box {
+  padding: 1rem 0.4rem;
+}
+main section.right-section .title {
+  color: var(--title);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+main section.right-section .sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+main section.right-section .card .icon {
+  justify-content: end;
+  gap: 6px;
+}
+
+main section.right-section .card .icon {
+  color: var(--blue);
+  font-size: 1rem;
+  transition: 0.3s;
+}
+main section.right-section .card .icon:hover {
+  transform: scale(1.05);
+}
+
+.filter-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.filter-box select {
+  background: rgba(36, 37, 46, 1);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+  font-size: 1rem;
+}
+
+/* =============================
+   3. responsive design (media query)
+=============================== */
+
+@media (max-width: 600px) {
+  main.flex {
+    flex-direction: column;
+    gap: 2.64rem;
+  }
+  main section.left-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main section.left-section button {
+    width: 7rem;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+  }
+}

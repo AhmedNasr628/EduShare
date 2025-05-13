@@ -1,0 +1,81 @@
+section h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--subtitle);
+}
+
+section label {
+  font-size: 1rem;
+  color: var(--subtitle);
+}
+
+section .form-group-post {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0 2rem 0;
+}
+
+section .form-group-post input,
+select {
+  background: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgba(63, 63, 70);
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  color: var(--subtitle);
+}
+section .form-group-post input:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+  background: rgba(63, 63, 70, 0.25);
+}
+section .form-group-post input:hover {
+  background: rgba(63, 63, 70, 0.25);
+  border: 1px solid var(--blue);
+}
+
+section .form-group-post textarea {
+  background: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgba(63, 63, 70);
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  color: var(--subtitle);
+}
+
+section .form-group-post textarea:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+  background: rgba(63, 63, 70, 0.25);
+}
+section .form-group-post textarea:hover {
+  background: rgba(63, 63, 70, 0.25);
+  border: 1px solid var(--blue);
+}
+section .form-group-post button {
+  background: rgba(36, 37, 46, 1);
+  width: 9rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-top: 1.8rem;
+  border: 1px solid rgb(63, 63, 70);
+}
+section .form-group-post button:hover {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: #fff;
+}

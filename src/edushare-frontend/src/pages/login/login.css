@@ -1,0 +1,75 @@
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: seagreen;
+  background: url(./bf7fa2ea-1ff1-4227-bc88-4c55b338d06a.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  width: 420px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.login-container h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.login-container .form-group {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.login-container .form-group input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.login-container .form-group input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.login-container .form-group svg {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+.login-container button:hover {
+  background: var(--blue);
+  transition: all 0.3s ease;
+}

@@ -46,7 +46,7 @@ EduShare/
 ### 🚀 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/EduShare.git
+git clone https://github.com/AhmedNasr628/EduShare.git
 cd EduShare/src
 ```
 

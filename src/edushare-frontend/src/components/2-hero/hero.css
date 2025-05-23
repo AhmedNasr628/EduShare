@@ -1,0 +1,55 @@
+section.hero {
+  margin-top: 3rem;
+}
+
+/* ============================
+   1. left section
+=============================== */
+section.hero .hero-left {
+  flex-grow: 1;
+}
+section.hero .hero-left .image.flex {
+  align-items: end;
+}
+
+section.hero .hero-left img {
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid darkorange;
+  padding: 2px;
+  box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+}
+
+section.hero .hero-left button {
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+
+section.hero .hero-left h1.title {
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  color: var(--title);
+}
+
+section.hero .hero-left p.subtitle {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  margin: 24px 0;
+  color: var(--subtitle);
+}
+
+/* ===============================
+   2. Right section ==> animation
+ ================================= */
+
+/* .animation-hero {
+  width: 100%;
+  translate: 100px 55px;
+} */
+
+@media (max-width: 600px) {
+  .animation-hero {
+    display: none;
+  }
+}
